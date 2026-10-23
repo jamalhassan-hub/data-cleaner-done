@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Cleaner & Suppliers Catalog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>DataCleaner</h2>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/upload">Upload CSV</a>
+        <a href="/catalog">View Catalog</a>
+        <a href="/dropshippers">Dropshippers</a>
+        <a href="/settings">Settings</a>
+        <a href="/login" style="color: #ef4444; margin-top: 40px;">Logout</a>
+    </div>
+    <div class="main-content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

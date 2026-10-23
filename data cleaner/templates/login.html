@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - DataCleaner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="justify-content: center; align-items: center; height: 100vh;">
+    <div class="card" style="width: 300px; text-align: center;">
+        <h2>Login</h2>
+        <form action="/dashboard" method="GET">
+            <input type="email" placeholder="Email" required style="width: 90%; padding: 10px; margin: 10px 0; background: #2a2a2a; border: 1px solid #444; color: #fff;"><br>
+            <input type="password" placeholder="Password" required style="width: 90%; padding: 10px; margin: 10px 0; background: #2a2a2a; border: 1px solid #444; color: #fff;"><br>
+            <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Login</button>
+        </form>
+    </div>
+</body>
+</html>
